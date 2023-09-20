@@ -19,6 +19,14 @@ const getBreedsImage = async (sortBy = "ASC") => {
   return response.json();
 };
 
+const fetchImage = (sortBy) =>
+  getBreedsImage(sortBy).then((value) => {
+    window.localStorage.setItem("petList", JSON.stringify(value));
+    renderComponent(value);
+  });
+
+fetchImage();
+
 const dropdownElement = document.querySelector(".dropdownMenu");
 const formElement = document.querySelector(".searchForm");
 const searchInputElement = document.querySelector(".searchInput");
@@ -53,14 +61,6 @@ const renderComponent = (filteredPet) => {
     .map((pet) => PetCardComponent(pet))
     .join("");
 };
-
-const fetchImage = (sortBy) =>
-  getBreedsImage(sortBy).then((value) => {
-    window.localStorage.setItem("petList", JSON.stringify(value));
-    renderComponent(value);
-  });
-
-fetchImage();
 
 const sortPetById = (key) => {
   if (key === "ascending") {
@@ -98,7 +98,11 @@ const redirectTo = (page) => {
 
 prevPage.addEventListener("click", (event) => {
   event.preventDefault();
-  if (currentPage > 0) redirectTo(currentPage - 1);
+  if (currentPage > 1) {
+    redirectTo(Number(currentPage) - 1);
+  } else {
+    redirectTo(1);
+  }
 });
 
 pageOne.addEventListener("click", (event) => {
@@ -119,5 +123,5 @@ pageThree.addEventListener("click", (event) => {
 
 nextPage.addEventListener("click", (event) => {
   event.preventDefault();
-  redirectTo(currentPage + 1);
+  redirectTo(Number(currentPage) + 1);
 });
