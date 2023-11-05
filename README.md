@@ -1,6 +1,4 @@
-# JS Playground
-
-## PWL Teaching material
+# PWL Teaching material
 
 1. Introduction to React
 2. Essential Javascript for React (Fundamental)
