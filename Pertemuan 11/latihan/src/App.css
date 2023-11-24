@@ -1,0 +1,32 @@
+.App {
+  padding: 24px;
+}
+
+.btnIncrement {
+  background-color: green;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  margin-right: 8px;
+}
+.btnDecrement {
+  background-color: red;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.btnReset {
+  background-color: skyblue;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  margin-right: 8px;
+}

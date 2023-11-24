@@ -1,0 +1,111 @@
+.sidebar {
+  background-color: black;
+  width: 396px;
+  height: 100%;
+  color: white;
+  padding: 31px 10px;
+}
+.logo {
+  margin-bottom: 32px;
+}
+
+/* .mainSidebar{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    margin-bottom: 52px;
+} */
+
+.playlistActionSidebar {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  margin-bottom: 38px;
+}
+.playlistActionSidebarItem {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 12px;
+}
+
+.playlistActionSidebarItem:hover,
+.playlistSongSidebarText:hover,
+.installApp:hover {
+  background: #282828;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.playlistActionSidebarIcon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.playlistActionSidebarLikedIcon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: linear-gradient(
+    135deg,
+    #4000f4 0%,
+    #603aed 22.48%,
+    #7c6ee6 46.93%,
+    #979fe1 65.71%,
+    #a2b3de 77.68%,
+    #adc8dc 88.93%,
+    #c0ecd7 100%
+  );
+}
+
+.playlistActionSidebarPodcastIcon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #004638;
+}
+
+.playlistSongSidebar {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 63px;
+}
+
+.playlistSongSidebarText {
+  padding: 7px;
+}
+
+.installApp {
+  display: flex;
+  column-gap: 26px;
+  padding: 13px;
+}
+
+.mainSidebarItem {
+  display: flex;
+  align-items: center;
+  column-gap: 23px;
+  padding: 12px 23px;
+}
+
+.mainSidebarItem:hover {
+  border-radius: 6px;
+  background: #282828;
+  padding: 12px 23px;
+  cursor: pointer;
+}
+
+.mainSidebar {
+  margin-bottom: 52px;
+}
